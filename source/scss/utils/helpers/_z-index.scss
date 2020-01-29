@@ -1,8 +1,0 @@
-// z-index 級距 @each套用
-.h-z-index{
-  @each $name, $value in $z-index-value {
-    &--#{$name} {
-      z-index: $value;
-    }
-  }
-}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <title>六角甜點工坊</title>
+  <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">
+  <meta name='description' content='練習Bootstrap框架與自建元件' />
+  <meta property="og:title" content="六角甜點工坊" />
+  <meta property="og:description" content="練習Bootstrap框架與自建元件">
+  <meta property="og:type" content="website" />
+  <!--  apple端-網頁加入置主畫面圖示設定 -->
+  <link rel="apple-touch-icon" href="images/logo/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body class="text-primary">
+  <header class="container px-0 px-md-fixgrid">
+    <!-- logo撐高navbar  -->
+    <nav class="navbar navbar-expand-md navbar-light p-0">
+      <button class="navbar-toggler border-0 px-7 py-6" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 切換 mobile min-width 576px -->
+      <h1 class="h-logo mb-0">
+        <a href="index.html" class="text-hide">Sweetaste</a>
+      </h1>
+      <!-- 購物車icon -->
+      <a class="text-primary text-decoration-none material-icons px-7 py-6 order-md-1" href="cart.html">
+        shopping_cart
+      </a>
+      <!-- collapse包覆選單 -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- nav 選單 -->
+        <ul class="navbar-nav ml-auto font-weight-bold">
+          <li class="nav-item">
+            <a class="nav-link text-primary px-7 py-6" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary px-7 py-6" href="product.html">甜點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary px-7 py-6" href="login.html">登入</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container px-0 px-md-fixgrid mb-7 mb-md-14">
+    <div class="h-banner-4"></div>
+    <div class="row">
+      <div class="col-md-4 mb-7 px-0 px-md-fixgrid">
+        <div class="list-group text-center h4">
+          <h2 class="h4 list-group-item text-secondary bg-primary py-4 mb-0">甜點類別</h2>
+          <a href="#" class="list-group-item text-primary list-group-item-action py-4">所有甜點（48）</a>
+          <a href="#" class="list-group-item text-primary list-group-item-action py-4">本日精選（10）</a>
+          <a href="#" class="list-group-item text-primary list-group-item-action py-4">人氣推薦（26）</a>
+          <a href="#" class="list-group-item text-primary list-group-item-action py-4 disabled" tabindex="-1"
+            aria-disabled="true">新品上市（12）</a>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6 px-7 px-md-fixgrid mb-7 mb-md-5">
+            <div class="card position-relative">
+              <img src="https://bit.ly/2zBjQuq" class="card-img-top" alt="" width="300" height="315">
+              <span class="h-around--left-2 h-vertical__rl text-white bg-primary p-2">本日精選</span>
+              <label class="c-checkStatus h-around--right-1 p-3 mb-0">
+                <input type="checkbox" class="c-checkStatus__checkbox">
+                <i class="material-icons c-checkStatus__icon--show">favorite</i>
+                <i class="material-icons c-checkStatus__icon--hidden">favorite_border</i>
+              </label>
+              <div class="card-body p-0">
+                <div class="d-flex text-center">
+                  <h3 class="h5 mb-0 py-3 w-50 border-right font-weight-light">焦糖馬卡龍</h3>
+                  <span class="h5 mb-0 py-3 w-50 h-symbol--before">450</span>
+                </div>
+                <a href="#" class="btn btn-lg btn-secondary d-block text-primary font-weight-bold">加入購物車</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-7 px-md-fixgrid mb-7 mb-md-5">
+            <div class="card position-relative">
+              <img src="https://bit.ly/2zBjQuq" class="card-img-top" alt="" width="300" height="315">
+              <span class="h-around--left-2 h-vertical__rl text-white bg-primary p-2">本日精選</span>
+              <label class="c-checkStatus h-around--right-1 p-3 mb-0">
+                <input type="checkbox" class="c-checkStatus__checkbox">
+                <i class="material-icons c-checkStatus__icon--show">favorite</i>
+                <i class="material-icons c-checkStatus__icon--hidden">favorite_border</i>
+              </label>
+              <div class="card-body p-0">
+                <div class="d-flex text-center">
+                  <h3 class="h5 mb-0 py-3 w-50 border-right font-weight-light">焦糖馬卡龍</h3>
+                  <span class="h5 mb-0 py-3 w-50 h-symbol--before">450</span>
+                </div>
+                <a href="#" class="btn btn-lg btn-secondary d-block text-primary font-weight-bold">加入購物車</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-7 px-md-fixgrid mb-7 mb-md-5">
+            <div class="card position-relative">
+              <img src="https://bit.ly/2zBjQuq" class="card-img-top" alt="" width="300" height="315">
+              <span class="h-around--left-2 h-vertical__rl text-white bg-primary p-2">本日精選</span>
+              <label class="c-checkStatus h-around--right-1 p-3 mb-0">
+                <input type="checkbox" class="c-checkStatus__checkbox">
+                <i class="material-icons c-checkStatus__icon--show">favorite</i>
+                <i class="material-icons c-checkStatus__icon--hidden">favorite_border</i>
+              </label>
+              <div class="card-body p-0">
+                <div class="d-flex text-center">
+                  <h3 class="h5 mb-0 py-3 w-50 border-right font-weight-light">焦糖馬卡龍</h3>
+                  <span class="h5 mb-0 py-3 w-50 h-symbol--before">450</span>
+                </div>
+                <a href="#" class="btn btn-lg btn-secondary d-block text-primary font-weight-bold">加入購物車</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-7 px-md-fixgrid mb-7 mb-md-5">
+            <div class="card position-relative">
+              <img src="https://bit.ly/2zBjQuq" class="card-img-top" alt="" width="300" height="315">
+              <span class="h-around--left-2 h-vertical__rl text-white bg-primary p-2">本日精選</span>
+              <label class="c-checkStatus h-around--right-1 p-3 mb-0">
+                <input type="checkbox" class="c-checkStatus__checkbox">
+                <i class="material-icons c-checkStatus__icon--show">favorite</i>
+                <i class="material-icons c-checkStatus__icon--hidden">favorite_border</i>
+              </label>
+              <div class="card-body p-0">
+                <div class="d-flex text-center">
+                  <h3 class="h5 mb-0 py-3 w-50 border-right font-weight-light">焦糖馬卡龍</h3>
+                  <span class="h5 mb-0 py-3 w-50 h-symbol--before">450</span>
+                </div>
+                <a href="#" class="btn btn-lg btn-secondary d-block text-primary font-weight-bold">加入購物車</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-7 px-md-fixgrid mb-7 mb-md-5">
+            <div class="card position-relative">
+              <img src="https://bit.ly/2zBjQuq" class="card-img-top" alt="" width="300" height="315">
+              <span class="h-around--left-2 h-vertical__rl text-white bg-primary p-2">本日精選</span>
+              <label class="c-checkStatus h-around--right-1 p-3 mb-0">
+                <input type="checkbox" class="c-checkStatus__checkbox">
+                <i class="material-icons c-checkStatus__icon--show">favorite</i>
+                <i class="material-icons c-checkStatus__icon--hidden">favorite_border</i>
+              </label>
+              <div class="card-body p-0">
+                <div class="d-flex text-center">
+                  <h3 class="h5 mb-0 py-3 w-50 border-right font-weight-light">焦糖馬卡龍</h3>
+                  <span class="h5 mb-0 py-3 w-50 h-symbol--before">450</span>
+                </div>
+                <a href="#" class="btn btn-lg btn-secondary d-block text-primary font-weight-bold">加入購物車</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-7 px-md-fixgrid mb-7 mb-md-5">
+            <div class="card position-relative">
+              <img src="https://bit.ly/2zBjQuq" class="card-img-top" alt="" width="300" height="315">
+              <span class="h-around--left-2 h-vertical__rl text-white bg-primary p-2">本日精選</span>
+              <label class="c-checkStatus h-around--right-1 p-3 mb-0">
+                <input type="checkbox" class="c-checkStatus__checkbox">
+                <i class="material-icons c-checkStatus__icon--show">favorite</i>
+                <i class="material-icons c-checkStatus__icon--hidden">favorite_border</i>
+              </label>
+              <div class="card-body p-0">
+                <div class="d-flex text-center">
+                  <h3 class="h5 mb-0 py-3 w-50 border-right font-weight-light">焦糖馬卡龍</h3>
+                  <span class="h5 mb-0 py-3 w-50 h-symbol--before">450</span>
+                </div>
+                <a href="#" class="btn btn-lg btn-secondary d-block text-primary font-weight-bold">加入購物車</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center justify-content-md-end">
+          <ul class="pagination px-fixgrid mb-0">
+            <li class="page-item">
+              <a class="page-link border-right-0 material-icons mb-0" href="#" aria-label="Previous">arrow_left</a>
+            </li>
+            <li class="page-item"><a class="h5 mb-0 px-6 page-link border-right-0" href="#">1</a></li>
+            <li class="page-item"><a class="h5 mb-0 px-6 page-link border-right-0" href="#">2</a></li>
+            <li class="page-item"><a class="h5 mb-0 px-6 page-link border-right-0" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link material-icons mb-0" href="#" aria-label="Next">arrow_right</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <section class="bg-primary py-7 px-4 px-md-0">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 text-white pb-5 pb-md-0 text-center text-md-left">
+            <img src="images/logo/logo-light.svg" alt="" width="40" height="40">
+            <span class="ml-3 h4 font-weight-normal align-middle">訂閱你我的甜蜜郵件</span>
+          </div>
+          <div class="col-md-5">
+            <form action="index.html" class="c-indentGroup pl-15 d-flex justify-content-between">
+              <label for="input-index-email"
+                class="c-indentGroup__icon h-around--tleft-3 mb-0 material-icons">email</label>
+              <input type="email" class="c-indentGroup__content pr-2 w-100" id="input-index-email"
+                placeholder="example@gmail.com">
+              <button type="submit" class="btn btn-warning material-icons py-3 px-4">arrow_forward</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-secondary p-5 pt-10 px-md-0">
+      <div class="container">
+        <div class="row justify-content-center pt-2">
+          <div class="col-md-5 d-flex flex-column justify-content-between">
+            <img src="images/logo/logotype-lg-dark.svg" alt="" width="171" height="27">
+            <ul class="list-unstyled h-helve-family my-10">
+              <li>07-1234-5678</li>
+              <li>sweetaste@email.com</li>
+              <li>800 高雄市新興區幸福路 520 號</li>
+            </ul>
+          </div>
+          <div class="col-md-5 d-none d-md-block text-right mt-n3">
+            <img src="images/lg-quote-4.svg" alt="" width="59" height="219">
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-end">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <img src="images/ic-line@.svg" alt="" width="32" height="32">
+            <img src="images/ic-facebook.svg" alt="" width="32" height="32">
+          </div>
+          <div class="col-md-5 text-md-right h-times-family">
+            <span>© 2018 Sweetaste* All Rights Reserved</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="/javascripts/vendor.js"></script>
+</body>
+
+</html>

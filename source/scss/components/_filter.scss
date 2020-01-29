@@ -1,0 +1,65 @@
+.c-filter {
+  // 濾鏡元件 底片(film) + 遮光罩(mask)
+  position: relative;
+  display: flex;
+  height: 256px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  & + & {
+    border-left: 1px solid #fff;
+  }
+  &--lg {
+    height: 315px;
+  }
+  &--sm {
+    height: 197px; // 測試用 本次作業不會用到
+  }
+  &__text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    writing-mode: vertical-rl;
+    transition: color 1s;
+  }
+  &__mask {
+    position: absolute;
+    transition: background-color 1s;
+    z-index: -1;
+  }
+  &__film {
+    position: absolute;
+    z-index: -2;
+    transition: filter 1.5s;
+  }
+  &--active > &__text,
+  &:hover > &__text {
+    color: theme-color("primary");
+    font-weight: bold;
+  }
+  &--active > &__mask,
+  &:hover > &__mask {
+    background-color: rgba(theme-color("warning"), 0.8);
+  }
+  &--active > &__film,
+  &:hover > &__film {
+    filter: blur(0px);
+  }
+  &:hover {
+    text-decoration: none;
+  }
+
+  //依 bootstrap變數配色
+  @each $name, $value in $theme-colors {
+    &__mask--#{$name} {
+      background-color: rgba($value, 0.8);
+    }
+  }
+
+  // filter 模糊屬性級距
+  @each $name, $value in $num-value {
+    &--blur-#{$name} {
+      filter: blur($value);
+    }
+  }
+}

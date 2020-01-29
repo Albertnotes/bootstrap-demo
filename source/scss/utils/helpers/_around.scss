@@ -1,0 +1,44 @@
+// around 級距 @each套用
+// 批次設定全螢幕、左上、右上、左下、右下各位置定位
+// variables-custom 搜尋 $absolute-value
+@each $name, $value in $absolute-value {
+  .h-around{
+    &--#{$name} {
+      position: absolute;
+      top: $value;
+      bottom: $value;
+      left: $value;
+      right: $value;
+    }
+    &--left-#{$name} {
+      position: absolute;
+      top: -1px;
+      left: $value;
+    }
+    &--right-#{$name} {
+      position: absolute;
+      top: -1px;
+      right: $value;
+    }
+    &--tleft-#{$name} {
+      position: absolute;
+      top: 1rem;
+      left: $value;
+    }
+    &--tright-#{$name} {
+      position: absolute;
+      top: 1rem;
+      right: $value;
+    }
+    &--bleft-#{$name} {
+      position: absolute;
+      bottom: 1rem;
+      left: $value;
+    }
+    &--bright-#{$name} {
+      position: absolute;
+      bottom: 1rem;
+      right: $value;
+    }
+  }
+}

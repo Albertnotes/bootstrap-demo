@@ -1,0 +1,26 @@
+// 標題水平線
+.h-titleLine {
+  display: block;
+  &:before,
+  &:after {
+    content: "";
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 1px;
+    @include min-breakpoint-lg {
+      & {
+        width: 50px;
+      }
+    }
+  }
+  //依 bootstrap變數配色
+  @each $name, $value in $theme-colors {
+    &--#{$name}::before,
+    &--#{$name}::after {
+      background-color: $value;
+    }
+  }
+}

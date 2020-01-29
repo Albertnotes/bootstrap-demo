@@ -1,0 +1,11 @@
+//符號
+.h-symbol {
+  &--before::before {
+    content: $symbol-value;
+    margin-right: 5px;
+  }
+  &--after::after {
+    content: $symbol-value;
+    margin-right: 5px;
+  }
+}

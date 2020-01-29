@@ -1,0 +1,15 @@
+.c-indentGroup {
+  position: relative;
+  background-color: #eaf0ed;
+  &__icon {
+    position: absolute;
+    vertical-align: middle;
+  }
+  &__content {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 3.5rem;
+    color: theme-color("primary");
+  }
+}

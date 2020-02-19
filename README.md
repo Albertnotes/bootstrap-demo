@@ -1,5 +1,5 @@
 # 甜點電商 (以 Boostrap 排版)
-> 這是 Bootstrap 框架整合練習
+> 這是 Bootstrap 框架整合練習  
 > 練習設計稿來自 [六角學院 - Bootstrap 4 - 開發超強不解釋](https://www.hexschool.com/bootstrap/)
 
 ## DEMO

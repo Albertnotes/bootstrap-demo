@@ -21,7 +21,7 @@ https://albertnotes.github.io/bootstrap-demo/
 git clone git@github.com:Albertnotes/bootstrap-demo.git
 
 # cd 專案資料夾 - 安裝環境 
-npm install gulp -g
+npm install gulp-cli -g
 
 # 執行
 npm install

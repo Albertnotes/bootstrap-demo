@@ -17,10 +17,7 @@ https://albertnotes.github.io/bootstrap-demo/
 ## 安裝與執行
 
 ``` 
-# Clone 專案
-git clone git@github.com:Albertnotes/bootstrap-demo.git
-
-# cd 專案資料夾 - 安裝環境 
+# 安裝 gulp
 npm install gulp-cli -g
 
 # 執行
@@ -31,7 +28,4 @@ gulp
 gulp build # 生成靜態網頁（未壓縮）預設 --env development 可省略
 gulp build --env production # 生成靜態網頁（壓縮 CSS）
 gulp deploy # 將靜態網頁佈署到 gh-pages
-
-# 本專案 gulp 任務模組沒有加入圖片壓縮
-# 因為第三方應用程式壓縮率大於套件
 ```
